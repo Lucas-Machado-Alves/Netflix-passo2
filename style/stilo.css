@@ -1,0 +1,142 @@
+/*Variaveis em CSS*/
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*--======Principal======--*/
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .conteiner{
+    display:flex;
+    padding-right:10px ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 100;
+}
+
+
+/*--======Menu======--*/
+header .logo img{
+    max-width: 150px;
+
+}
+
+.navegation{
+    display: flex; /*A lista ficou na horizontal*/
+}
+
+.navegation li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.navegation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.navegation li:hover a{
+    color: #de0611;
+}
+
+
+
+/*--======Filme Principal======--*/
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) ,url(../img/capa-house.jpg);
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color:rgba(0,0,0,.50) ;
+    border: none;
+    color: white;
+    border-radius: 3px;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black; 
+}
+
+
+.botao i{
+    margin-right: 8px;
+}
+
+.botao-viw{
+    border: none;
+}
+
+/*--=====Botões assistir agora====--*/
+
+
+.conteiner{
+    margin-left: 20px;
+}
+
+.filme-principal .conteiner{
+    width: 70%;
+}
+
+.box.filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
